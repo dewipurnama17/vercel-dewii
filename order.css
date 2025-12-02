@@ -1,0 +1,212 @@
+body {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 80px; /* Atur sesuai dengan tinggi navigasi Anda */
+  }
+  
+  .container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: wheat;
+    z-index: 1000; /* Pastikan z-index cukup tinggi untuk mengatasi elemen lain */
+  }
+  
+  .nav-brand {
+    display: flex;
+    align-items: center; /* Mengatur agar ikon dan teks berada dalam satu garis vertikal */
+  }
+  
+  .nav-brand i {
+    font-size: 24px; /* Ukuran ikon */
+    margin-right: 10px; /* Jarak antara ikon dan teks */
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1.5%;
+  }
+  .nav-brand h1 a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+  }
+  .nav-brand h1 a span {
+    color: whitesmoke;
+  }
+  .nav-menu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: color 0.3s ease;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: wheat;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: wheat;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: whitesmoke;}
+  
+  .nav-menu a:hover {
+    color: whitesmoke;
+  }
+  .nav-icons {
+    display: flex;
+    align-items: center; 
+  }
+  
+  .nav-icons .icon {
+    margin-left: 10px;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  .nav-icons .icon:hover {
+    color: whitesmoke;
+  }
+  .profile .btn {
+    background: darkred;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  .profile .btn:hover {
+    background: black;
+    color: wheat;
+  }
+  .col-3 .image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .col-3 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+  }
+  .col-3 .image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: rgb(218, 232, 18);
+    text-align: center;
+  }
+  .col-3 .image-text h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .col-3 .image-text p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  /* Additional CSS for Order Now button */
+  .image-text .btn {
+    display: inline-block;
+    background-color: grey;
+    color: yellow;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .image-text .btn:hover {
+    background-color: #333;
+  }
+
+/* Order Now Page Specific Styles */
+.order-now-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-now-container h2 {
+    text-align: center;
+}
+
+.order-now-container p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.order-now-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-now-container label {
+    margin-bottom: 5px;
+}
+
+.order-now-container input[type="text"],
+.order-now-container input[type="number"],
+.order-now-container button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.order-now-container button {
+    background-color: blue;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.order-now-container button:hover {
+    background-color: navy;
+}

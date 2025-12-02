@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Order Now</title>
+   <link rel="stylesheet" href="order.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+</head>
+<body>
+    
+    <!--Header-->
+    <div class="header">
+        <div class="nav-container">
+            <div class="nav">
+                <div class="nav-brand">
+                    <i class="fas fa-shopping-bag"></i>
+                    <h1><a href="#">EleganceBag<span>Shop</span></a></h1>
+                </div>
+                <div class="nav-menu">
+                    <a href="index.html#home">Home</a>
+                    <a href="index.html#about" id="about-link">About</a>
+                    <a href="index.html#product">Product</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Categories <i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="index.html#categories-kids">Kids</a>
+                            <a href="index.html#categories-men">Men</a>
+                            <a href="index.html#categories-women">Women</a>
+                        </div>
+                    </div>
+                    <a href="index.html#review">Review</a>
+                    <a href="index.html#contact">Contact Me</a>
+                </div>
+                <div class="nav-icons">
+                    <div class="menu-btn" id="menuBtn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="#" class="icon"><i class="fas fa-search"></i></a>
+                    <a href="#" class="icon"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="#" class="icon"><i class="fas fa-user"></i></a> 
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    
+    <div class="order-now-container">
+        <h2>Order Now</h2>
+        <p>Isi formulir di bawaah ini untuk melakukan pemesanan :</p>
+        <form action="submit_order.php" method="POST">
+            <label for="fullname">Nama Lengkap:</label><br>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+            
+            <label for="productname">Nama Product:</label><br>
+            <input type="text" id="productname" name="productname" required><br><br>
+            
+            <label for="quantity">Jumlah :</label><br>
+            <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+            
+            <button type="submit" class="btn">Submit Order</button>
+        </form>
+    </div>
+
+</body>
+</html>
